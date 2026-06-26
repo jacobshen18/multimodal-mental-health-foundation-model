@@ -1,0 +1,23 @@
+model:
+  name: openai/clip-vit-base-patch32
+  freeze_vision: false
+  freeze_text: false
+
+data:
+  train_manifest: data/manifests/train_multimodal.jsonl
+  validation_manifest: data/manifests/validation_multimodal.jsonl
+  image_root: .
+  max_frames_per_video: 4
+
+training:
+  output_dir: checkpoints/multimodal-clip
+  learning_rate: 0.00001
+  batch_size: 8
+  num_epochs: 1
+  temperature: 0.07
+  device: auto
+
+safety:
+  require_manifest_validation: true
+  block_private_data: true
+  require_dataset_card: true

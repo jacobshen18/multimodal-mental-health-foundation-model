@@ -1,0 +1,1 @@
+Placeholder path for a local video frame. Replace with a real approved frame outside git.

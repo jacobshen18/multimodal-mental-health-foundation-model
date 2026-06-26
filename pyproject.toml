@@ -3,14 +3,14 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "mental-health-foundation-model"
+name = "multimodal-mental-health-foundation-model"
 version = "0.1.0"
-description = "Responsible training and evaluation scaffolding for mental-health-adjacent foundation models."
+description = "Responsible multimodal training and evaluation scaffolding for mental-health-adjacent foundation models."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "Apache-2.0"
 authors = [{ name = "Hanjie Shen", email = "shenhanjie0418@gmail.com" }]
-keywords = ["mental-health", "foundation-model", "llm", "safety", "evaluation"]
+keywords = ["mental-health", "foundation-model", "multimodal", "ai", "safety", "evaluation"]
 classifiers = [
   "Development Status :: 2 - Pre-Alpha",
   "Intended Audience :: Science/Research",
@@ -26,6 +26,13 @@ dependencies = ["pydantic>=2.7"]
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "ruff>=0.5"]
 train = ["datasets>=2.20", "transformers>=4.42", "accelerate>=0.31", "torch>=2.3"]
+multimodal = [
+  "pillow>=10.0",
+  "torch>=2.3",
+  "transformers>=4.42",
+  "tqdm>=4.66",
+]
+video = ["opencv-python>=4.10"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/mhfm"]

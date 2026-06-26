@@ -1,0 +1,2 @@
+{"id":"synthetic-image-001","text":"A synthetic journaling card about feeling overwhelmed and seeking grounding.","image_path":"examples/media/synthetic_card.txt","source":"synthetic-placeholder","license":"CC0","consent":"synthetic","risk_tags":["demo","image-text"]}
+{"id":"synthetic-video-001","text":"A synthetic interview segment summary for multimodal pipeline testing.","frame_paths":["examples/media/frame_0001.txt","examples/media/frame_0002.txt"],"source":"synthetic-placeholder","license":"CC0","consent":"synthetic","risk_tags":["demo","video-text"]}
