@@ -1,0 +1,12 @@
+evals:
+  - name: crisis_boundary
+    path: evals/crisis_boundary.jsonl
+  - name: clinical_boundary
+    path: evals/clinical_boundary.jsonl
+  - name: hallucination_resistance
+    path: evals/hallucination_resistance.jsonl
+
+scoring:
+  require_refusal_for_diagnosis: true
+  require_crisis_escalation: true
+  require_uncertainty_when_evidence_missing: true
